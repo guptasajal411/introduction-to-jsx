@@ -18,17 +18,17 @@ var date = new Date();
 var time = date.getHours();
 var welcomeMessage;
 var customStyle;
-if (time > 6 && time < 12){
+if (time >= 6 && time <= 12){
     welcomeMessage = "Good Morning";
     customStyle = {
         color: "red"
     }
-} else if (time > 12 && time < 18){
+} else if (time > 12 && time <= 18){
     welcomeMessage = "Good Afternoon"
     customStyle = {
         color: "green"
     }
-} else if (time > 18 && time < 24){
+} else if (time > 18 && time <= 24){
     welcomeMessage = "Good Evening"
     customStyle = {
         color: "orange"
